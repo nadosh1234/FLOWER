@@ -1,0 +1,75 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=S4RG79IJNB75NRGU --start-paused --dart-define=flutter.inspector.structuredErrors=true lib\main.dart
+
+## exception
+
+StateError: Bad state: Failed to start Dart Development Service
+
+```
+#0      DartDevelopmentService.startDartDevelopmentService (package:flutter_tools/src/base/dds.dart:116:9)
+<asynchronous suspension>
+#1      FlutterDevice.connect.<anonymous closure> (package:flutter_tools/src/resident_runner.dart:294:11)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, 3.26.0-0.1.pre, on Microsoft Windows [Version 10.0.22631.4169], locale en-US)
+    • Flutter version 3.26.0-0.1.pre on channel beta at C:\src\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision ee624bc4fd (2 weeks ago), 2024-09-10 17:41:06 -0500
+    • Engine revision 059e4e6d8f
+    • Dart version 3.6.0 (build 3.6.0-216.1.beta)
+    • DevTools version 2.39.0
+
+[✓] Windows Version (Installed version of Windows is version 10 or higher)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 35.0.0)
+    • Android SDK at C:/Users/2023/AppData/Local/Android/Sdk
+    • Platform android-35, build-tools 35.0.0
+    • ANDROID_HOME = C:/Users/2023/AppData/Local/Android/Sdk
+    • Java binary at: C:\Program Files\Android\Android Studio\jbr\bin\java
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0--11852314)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Android Studio (version 2024.1)
+    • Android Studio at C:\Users\2023\AppData\Local\Programs\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0--11852314)
+
+[✓] Android Studio (version 2022.3)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • android-studio-dir = C:\Program Files\Android\Android Studio
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0--11852314)
+
+[✓] VS Code (version 1.90.2)
+    • VS Code at C:\Users\2023\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension can be installed from:
+      🔨 https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[✓] Connected device (4 available)
+    • CPH2239 (mobile)             • S4RG79IJNB75NRGU • android-arm64  • Android 11 (API 30)
+    • sdk gphone64 x86 64 (mobile) • emulator-5554    • android-x64    • Android 14 (API 34) (emulator)
+    • Chrome (web)                 • chrome           • web-javascript • Google Chrome 129.0.6668.70
+    • Edge (web)                   • edge             • web-javascript • Microsoft Edge 129.0.2792.52
+
+[✓] Network resources
+    • All expected network resources are available.
+
+• No issues found!
+```
